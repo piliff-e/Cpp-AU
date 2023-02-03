@@ -8,8 +8,8 @@
 using namespace std;
 
 /// Вспомогательные функции
-int random_number(int from, int to); /// Выбор случайного числа из диапазона
-pair<int, int> get_random_numbers(int from, int to); /// Выбор двух случайных индексов из вектор
+inline int random_number(int from, int to); /// Выбор случайного числа из диапазона
+inline pair<int, int> get_random_numbers(int from, int to); /// Выбор двух случайных индексов из вектор
 
 class Individual {
     friend class Genetic;
@@ -17,7 +17,11 @@ class Individual {
 private:
     vector<int> individual;
 
-    int operator [] (int i) const {
+    int& operator [] (int i) {
+        return individual[i];
+    }
+
+    const int& operator [] (int i) const {
         return individual[i];
     }
 
@@ -26,9 +30,9 @@ private:
     }
 
 public:
-    int func(); /// Целевая функция (может быть любой)
+    inline int fitness(); /// Целевая функция (может быть любой)
     void mutation(); /// Мутация (см. Genetic.cpp)
-    void print_individual(); /// Печать особи (вектора из пяти элементов)
+    inline void print_individual(); /// Печать особи (вектора из пяти элементов)
 
     explicit Individual(int n) { /// Создание особи (формирование вектора из пяти элементов из данного шестизначного числа)
         int a1 = n / 10000;

@@ -6,15 +6,14 @@
 #include <cstdlib>
 #include <vector>
 #include "Genetic.h"
-using namespace std;
 
 /// Выбор случайного числа из диапазона
-int random_number(int from, int to) {
+inline int random_number(int from, int to) {
     return from + rand() % (to - from + 1);
 }
 
 /// Выбор двух случайных индексов из вектора
-pair<int, int> get_random_numbers(int from, int to) {
+inline pair<int, int> get_random_numbers(int from, int to) {
     int i = random_number(from, to);
     int j = random_number(from, to);
     /// Добивается различия i и j, если изначально они были равны
@@ -25,7 +24,7 @@ pair<int, int> get_random_numbers(int from, int to) {
 }
 
 /// Целевая функция (может быть любой): f(x,y,z,w) = |(x + 11 * y + 111 * z + 1111 * w) / 100|
-int Individual::func() {
+inline int Individual::fitness() {
     return abs((individual[0] + 11 * individual[1] + 111 * individual[2] + 1111 * individual[3]) / 100);
 }
 
@@ -48,7 +47,7 @@ void Individual::mutation() {
 }
 
 /// Печать особи (вектора из пяти элементов)
-void Individual::print_individual() {
+inline void Individual::print_individual() {
     cout << individual[0] << " " << individual[1] << " " << individual[2] << " " << individual[3] << " " << individual[4] << endl;
 }
 
@@ -85,10 +84,8 @@ void Genetic::create_population(const Individual &a, const Individual &b) {
 
 /// Вычисление приспособленности каждой особи популяции (применение целевой функции к каждому вектору из вектора векторов)
 void Genetic::calc_fitness() {
-//    for (auto & i : population) i[4] = i.func(); /// ОШИБКА
     for (int i = 0; i < population.size(); i++)
-        population[i][4] = population[i].func();
-
+        population[i][4] = population[i].fitness();
 }
 
 /// Селекция: отбор наиболее приспособленных особей (удаление из конца вектора векторов половины векторов)

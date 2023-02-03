@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/phil.e/Documents/\u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442/C:C++/sem_project/Project_CLion_2/cmake-build-debug"
+			"value" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/phil.e/Documents/\u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442/C:C++/sem_project/Project_CLion_2/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -539,7 +539,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/phil.e/Documents/\u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442/C:C++/sem_project/Project_CLion_2"
+			"value" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -1111,7 +1111,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/phil.e/Documents/\u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442/C:C++/sem_project/Project_CLion_2/cmake-build-debug"
+			"value" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/cmake-build-debug"
 		},
 		{
 			"name" : "Project_CLion_2_IS_TOP_LEVEL",
@@ -1135,7 +1135,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/phil.e/Documents/\u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442/C:C++/sem_project/Project_CLion_2"
+			"value" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm"
 		}
 	],
 	"kind" : "cache",

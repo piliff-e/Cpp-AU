@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/phil.e/Documents/Университет/C:C++/sem_project/Project_CLion_2 -B /Users/phil.e/Documents/Университет/C:C++/sem_project/Project_CLion_2/cmake-build-debug
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm -B /Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/cmake-build-debug
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/phil.e/Documents/Университет/C:C++/sem_project/Project_CLion_2/cmake-build-debug
+-- Build files have been written to: /Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/cmake-build-debug

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/phil.e/Documents/Университет/C:C++/sem_project/Project_CLion_2
+# Install script for directory: /Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/phil.e/Documents/Университет/C:C++/sem_project/Project_CLion_2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
