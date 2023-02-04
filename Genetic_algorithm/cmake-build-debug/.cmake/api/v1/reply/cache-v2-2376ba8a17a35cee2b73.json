@@ -819,7 +819,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Project_CLion_2"
+			"value" : "Genetic_algorithm"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1102,7 +1102,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "Project_CLion_2_BINARY_DIR",
+			"name" : "Genetic_algorithm_2_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1114,7 +1114,7 @@
 			"value" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/cmake-build-debug"
 		},
 		{
-			"name" : "Project_CLion_2_IS_TOP_LEVEL",
+			"name" : "Genetic_algorithm_2_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1126,7 +1126,43 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "Project_CLion_2_SOURCE_DIR",
+			"name" : "Genetic_algorithm_2_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm"
+		},
+		{
+			"name" : "Genetic_algorithm_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/cmake-build-debug"
+		},
+		{
+			"name" : "Genetic_algorithm_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "Genetic_algorithm_SOURCE_DIR",
 			"properties" : 
 			[
 				{

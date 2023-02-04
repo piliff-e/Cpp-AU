@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Project_CLion_2"
+			"path" : "Genetic_algorithm"
 		}
 	],
 	"backtrace" : 1,
@@ -10,7 +10,8 @@
 	{
 		"commands" : 
 		[
-			"add_executable"
+			"add_executable",
+			"include_directories"
 		],
 		"files" : 
 		[
@@ -23,6 +24,12 @@
 			},
 			{
 				"command" : 0,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
 				"file" : 0,
 				"line" : 6,
 				"parent" : 0
@@ -41,6 +48,17 @@
 					"fragment" : "-std=gnu++17"
 				}
 			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/Genetic"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/Run_Genetic"
+				}
+			],
 			"language" : "CXX",
 			"languageStandard" : 
 			{
@@ -54,11 +72,11 @@
 			[
 				0,
 				1,
-				4
+				3
 			]
 		}
 	],
-	"id" : "Project_CLion_2::@6890427a1f51a3e7e1df",
+	"id" : "Genetic_algorithm::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -74,8 +92,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Project_CLion_2",
-	"nameOnDisk" : "Project_CLion_2",
+	"name" : "Genetic_algorithm",
+	"nameOnDisk" : "Genetic_algorithm",
 	"paths" : 
 	{
 		"build" : ".",
@@ -89,7 +107,7 @@
 			[
 				0,
 				1,
-				4
+				3
 			]
 		},
 		{
@@ -97,7 +115,7 @@
 			"sourceIndexes" : 
 			[
 				2,
-				3
+				4
 			]
 		}
 	],
@@ -112,24 +130,24 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Genetic.cpp",
+			"path" : "Genetic/Genetic.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Genetic.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Run_Genetic.h",
+			"path" : "Genetic/Genetic.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Run_Genetic.cpp",
+			"path" : "Run_Genetic/Run_Genetic.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Run_Genetic/Run_Genetic.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

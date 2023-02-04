@@ -1,9 +1,9 @@
 # ninja log v5
-3	4487	1675456653713637031	CMakeFiles/Project_CLion_2.dir/Genetic.cpp.o	5cc7f4a46e15459a
-2	4199	1675456653423901223	CMakeFiles/Project_CLion_2.dir/main.cpp.o	81225cc3ec081bd5
-4488	4762	1675456653992595159	Project_CLion_2	af27f9f67f710d7c
-0	212	1675461639253291974	build.ninja	5f9d39ee5d5e3ea8
-9	420	1675462751027638546	CMakeFiles/Project_CLion_2.dir/main.cpp.o	81225cc3ec081bd5
-11	1454	1675462752062520637	CMakeFiles/Project_CLion_2.dir/Run_Genetic.cpp.o	db3f74b21e894296
-11	1492	1675462752101476481	CMakeFiles/Project_CLion_2.dir/Genetic.cpp.o	5cc7f4a46e15459a
-1492	1703	1675462752314724477	Project_CLion_2	11faa0a29a884936
+2242	2492	1675525916281658741	Genetic_algorithm_2	af45148ce4e056f5
+0	93	1675526730649144615	CMakeFiles/Genetic_algorithm.dir/main.cpp.o	c6a21b831b02c185
+1	1099	1675526731653525506	CMakeFiles/Genetic_algorithm.dir/Run_Genetic/Run_Genetic.cpp.o	8ccaa6b9591b7c2d
+0	1177	1675526731732139789	CMakeFiles/Genetic_algorithm.dir/Genetic/Genetic.cpp.o	a3671da1e6ee1681
+1178	1254	1675526731808757251	Genetic_algorithm	2e9bb3667d5a04ac
+4	93	1675526880941563672	CMakeFiles/Genetic_algorithm.dir/main.cpp.o	c6a21b831b02c185
+4	1374	1675526882225021305	CMakeFiles/Genetic_algorithm.dir/Run_Genetic/Run_Genetic.cpp.o	8ccaa6b9591b7c2d
+1374	1503	1675526882355968810	Genetic_algorithm	2e9bb3667d5a04ac
