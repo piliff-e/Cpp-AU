@@ -5,14 +5,20 @@
 #include <iostream>
 #include <cstdlib>
 #include <vector>
-#include "../Genetic.h"
+#include "Genetic.h"
 
-/// Выбор случайного числа из диапазона
+/// Выбор случайного числа из заданного диапазона
+/// \param from (начало диапазона)
+/// \param to (конец диапазона)
+/// \return Случайное число из диапазона от from до to
 inline int random_number(int from, int to) {
     return from + rand() % (to - from + 1);
 }
 
-/// Выбор двух случайных индексов из вектора
+/// Выбор двух случайных индексов из вектора в заданном диапазоне
+/// \param from (начало диапазона)
+/// \param to (конец диапазона)
+/// \return Два случайных числа из диапазона от from до to
 inline pair<int, int> get_random_numbers(int from, int to) {
     int i = random_number(from, to);
     int j = random_number(from, to);
@@ -23,7 +29,8 @@ inline pair<int, int> get_random_numbers(int from, int to) {
     return {i, j};
 }
 
-/// Целевая функция (может быть любой): f(x,y,z,w) = |(x + 11 * y + 111 * z + 1111 * w) / 100|
+/// Приспособленность особи, то есть целевая функция (может быть любой): f(x,y,z,w) = |(x + 11 * y + 111 * z + 1111 * w) / 100|
+/// \return Приспособленность особи
 inline int Individual::fitness() {
     return abs((individual[0] + 11 * individual[1] + 111 * individual[2] + 1111 * individual[3]) / 100);
 }
@@ -52,6 +59,8 @@ inline void Individual::print_individual() {
 }
 
 /// Кроссинговер: скрещивание двух особей (получение 8 векторов из 2 путём перемешивания их элементов)
+/// \param a (первая скрещиваемая особь)
+/// \param b (вторая скрещиваемая особь)
 void Genetic::crossover(const Individual &a, const Individual &b) {
     Individual c1 = {(a[1] + a[2] + b[3]), a[1], a[2], b[3], 1};
     Individual c2 = {(a[1] + b[2] + a[3]), a[1], b[2], a[3], 1};
@@ -68,6 +77,8 @@ void Genetic::crossover(const Individual &a, const Individual &b) {
 }
 
 /// Формирование популяции из 128 особей (создание вектора векторов длины 128)
+/// \param a (первый "родитель")
+/// \param b (второй "родитель")
 void Genetic::create_population(const Individual &a, const Individual &b) {
     population.push_back(a);
     population.push_back(b);
@@ -97,6 +108,7 @@ void Genetic::selection() {
 }
 
 /// Эволюция: создание новых популяций и проведение селекции до решения задачи (...)
+/// \return Количество популяций (итераций), потребовавшихся для решения задачи
 int Genetic::evolution() {
     while (population[0][4] != 0) {
         pair<int, int> randoms = get_random_numbers(0, population.size() - 1);

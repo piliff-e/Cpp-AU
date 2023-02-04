@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm_2/cmake-build-debug"
+			"value" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm_2/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -539,7 +539,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm_2"
+			"value" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -819,7 +819,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Genetic_algorithm_2"
+			"value" : "Genetic_algorithm"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1111,7 +1111,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm_2/cmake-build-debug"
+			"value" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/cmake-build-debug"
 		},
 		{
 			"name" : "Genetic_algorithm_2_IS_TOP_LEVEL",
@@ -1135,7 +1135,43 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm_2"
+			"value" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm"
+		},
+		{
+			"name" : "Genetic_algorithm_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/cmake-build-debug"
+		},
+		{
+			"name" : "Genetic_algorithm_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "Genetic_algorithm_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm"
 		}
 	],
 	"kind" : "cache",

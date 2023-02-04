@@ -1,13 +1,4 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm -B /Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/cmake-build-debug
 -- Configuring done
-CMake Error at CMakeLists.txt:9 (add_executable):
-  Cannot find source file:
-
-    Genetic.cpp
-
-
-CMake Error at CMakeLists.txt:9 (add_executable):
-  No SOURCES given to target: Genetic_algorithm
-
-
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Generating done
+-- Build files have been written to: /Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/cmake-build-debug

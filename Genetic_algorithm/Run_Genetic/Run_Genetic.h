@@ -8,5 +8,5 @@ class GeneticApplication {
 public:
     /// Запуск проекта Genetic_algorithm
     /// \return 0 (стандартный вывод)
-    int run();
+    static int run();
 };

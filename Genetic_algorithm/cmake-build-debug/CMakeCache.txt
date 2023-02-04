@@ -211,6 +211,15 @@ CMAKE_STRIP:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+Genetic_algorithm_2_BINARY_DIR:STATIC=/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/cmake-build-debug
+
+//Value Computed by CMake
+Genetic_algorithm_2_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Genetic_algorithm_2_SOURCE_DIR:STATIC=/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm
+
+//Value Computed by CMake
 Genetic_algorithm_BINARY_DIR:STATIC=/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/cmake-build-debug
 
 //Value Computed by CMake
@@ -218,15 +227,6 @@ Genetic_algorithm_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 Genetic_algorithm_SOURCE_DIR:STATIC=/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm
-
-//Value Computed by CMake
-Project_CLion_2_BINARY_DIR:STATIC=/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/cmake-build-debug
-
-//Value Computed by CMake
-Project_CLion_2_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-Project_CLion_2_SOURCE_DIR:STATIC=/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm
 
 
 ########################

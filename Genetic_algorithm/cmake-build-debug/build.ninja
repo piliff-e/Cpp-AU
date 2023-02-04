@@ -49,20 +49,23 @@ build cmake_object_order_depends_target_Genetic_algorithm: phony || CMakeFiles/G
 build CMakeFiles/Genetic_algorithm.dir/main.cpp.o: CXX_COMPILER__Genetic_algorithm_Debug /Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/main.cpp || cmake_object_order_depends_target_Genetic_algorithm
   DEP_FILE = CMakeFiles/Genetic_algorithm.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/Genetic -I/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/Run_Genetic
   OBJECT_DIR = CMakeFiles/Genetic_algorithm.dir
   OBJECT_FILE_DIR = CMakeFiles/Genetic_algorithm.dir
 
-build CMakeFiles/Genetic_algorithm.dir/Genetic.cpp.o: CXX_COMPILER__Genetic_algorithm_Debug /Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/Genetic.cpp || cmake_object_order_depends_target_Genetic_algorithm
-  DEP_FILE = CMakeFiles/Genetic_algorithm.dir/Genetic.cpp.o.d
+build CMakeFiles/Genetic_algorithm.dir/Genetic/Genetic.cpp.o: CXX_COMPILER__Genetic_algorithm_Debug /Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/Genetic/Genetic.cpp || cmake_object_order_depends_target_Genetic_algorithm
+  DEP_FILE = CMakeFiles/Genetic_algorithm.dir/Genetic/Genetic.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/Genetic -I/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/Run_Genetic
   OBJECT_DIR = CMakeFiles/Genetic_algorithm.dir
-  OBJECT_FILE_DIR = CMakeFiles/Genetic_algorithm.dir
+  OBJECT_FILE_DIR = CMakeFiles/Genetic_algorithm.dir/Genetic
 
-build CMakeFiles/Genetic_algorithm.dir/Run_Genetic.cpp.o: CXX_COMPILER__Genetic_algorithm_Debug /Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/Run_Genetic.cpp || cmake_object_order_depends_target_Genetic_algorithm
-  DEP_FILE = CMakeFiles/Genetic_algorithm.dir/Run_Genetic.cpp.o.d
+build CMakeFiles/Genetic_algorithm.dir/Run_Genetic/Run_Genetic.cpp.o: CXX_COMPILER__Genetic_algorithm_Debug /Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/Run_Genetic/Run_Genetic.cpp || cmake_object_order_depends_target_Genetic_algorithm
+  DEP_FILE = CMakeFiles/Genetic_algorithm.dir/Run_Genetic/Run_Genetic.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/Genetic -I/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/Run_Genetic
   OBJECT_DIR = CMakeFiles/Genetic_algorithm.dir
-  OBJECT_FILE_DIR = CMakeFiles/Genetic_algorithm.dir
+  OBJECT_FILE_DIR = CMakeFiles/Genetic_algorithm.dir/Run_Genetic
 
 
 # =============================================================================
@@ -72,7 +75,7 @@ build CMakeFiles/Genetic_algorithm.dir/Run_Genetic.cpp.o: CXX_COMPILER__Genetic_
 #############################################
 # Link the executable Genetic_algorithm
 
-build Genetic_algorithm: CXX_EXECUTABLE_LINKER__Genetic_algorithm_Debug CMakeFiles/Genetic_algorithm.dir/main.cpp.o CMakeFiles/Genetic_algorithm.dir/Genetic.cpp.o CMakeFiles/Genetic_algorithm.dir/Run_Genetic.cpp.o
+build Genetic_algorithm: CXX_EXECUTABLE_LINKER__Genetic_algorithm_Debug CMakeFiles/Genetic_algorithm.dir/main.cpp.o CMakeFiles/Genetic_algorithm.dir/Genetic/Genetic.cpp.o CMakeFiles/Genetic_algorithm.dir/Run_Genetic/Run_Genetic.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6
   OBJECT_DIR = CMakeFiles/Genetic_algorithm.dir
   POST_BUILD = :
