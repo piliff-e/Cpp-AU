@@ -106,8 +106,8 @@ public:
     /// \return Количество популяций (итераций), потребовавшихся для решения задачи
     int evolution(); /// Эволюция (см. Genetic.cpp)
 
-    /// ???
-    /// \return
+    /// Запуск эволюции
+    /// \return Эволюция
     int Start() {
         return evolution();
     }
