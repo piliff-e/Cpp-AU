@@ -3,4 +3,5 @@
 int main() {
     GeneticApplication app;
     return app.run();
+    /// проверка
 }
