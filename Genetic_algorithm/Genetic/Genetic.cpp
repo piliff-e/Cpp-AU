@@ -7,14 +7,16 @@
 #include <vector>
 #include "Genetic.h"
 
+namespace {
 /// Выбор случайного числа из заданного диапазона
 /// \param from (начало диапазона)
 /// \param to (конец диапазона)
 /// \return Случайное число из диапазона от from до to
-inline int random_number(int from, int to) {
-    return from + rand() % (to - from + 1);
-}
+    inline int random_number(int from, int to) {
+        return from + rand() % (to - from + 1);
+    }
 
+}
 /// Выбор двух случайных индексов из вектора в заданном диапазоне
 /// \param from (начало диапазона)
 /// \param to (конец диапазона)

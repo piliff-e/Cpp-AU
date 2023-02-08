@@ -2,5 +2,5 @@
 
 int main() {
     GeneticApplication app;
-    return app.run();
+    return GeneticApplication::run();
 }
