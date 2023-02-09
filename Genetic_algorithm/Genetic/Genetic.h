@@ -5,27 +5,12 @@
 #pragma once
 
 #include <vector>
-using namespace std;
-
-//! Вспомогательные функции
-
-/// Выбор случайного числа из заданного диапазона
-/// \param from (начало диапазона)
-/// \param to (конец диапазона)
-/// \return Случайное число из диапазона от from до to
-inline int random_number(int from, int to); /// Выбор случайного числа из диапазона
-
-/// Выбор двух случайных индексов из вектора в заданном диапазоне
-/// \param from (начало диапазона)
-/// \param to (конец диапазона)
-/// \return Два случайных числа из диапазона от from до to
-inline pair<int, int> get_random_numbers(int from, int to); /// Выбор двух случайных индексов из вектор
 
 class Individual {
     friend class Genetic;
 
 private:
-    vector<int> individual;
+    std::vector<int> individual;
 
     /// Перегрузка оператора [] для класса Individual (для нахождения элемента особи по его индексу в произвольном случае)
     /// \param i (индекс искомого элемента)
@@ -51,13 +36,13 @@ private:
 public:
     /// Приспособленность особи, то есть целевая функция (может быть любой): f(x,y,z,w) = |(x + 11 * y + 111 * z + 1111 * w) / 100|
     /// \return Приспособленность особи
-    inline int fitness(); /// Целевая функция (может быть любой)
+    inline int fitness();
 
     /// Мутация: случайное изменение генома особи (прибавление случайного числа к случайному элементу вектора)
-    void mutation(); /// Мутация (см. Genetic.cpp)
+    void mutation();
 
     /// Печать особи (вектора из пяти элементов)
-    inline void print_individual(); /// Печать особи (вектора из пяти элементов)
+    inline void print_individual();
 
     /// Создание особи (формирование вектора из пяти элементов из данного шестизначного числа)
     /// \param n (фиксированное шестизначное число)
@@ -82,29 +67,29 @@ public:
 
 class Genetic {
 private:
-    vector<Individual> population;
+    std::vector<Individual> population;
     int iterations = 0;
 
 public:
     /// Кроссинговер: скрещивание двух особей (получение 8 векторов из 2 путём перемешивания их элементов)
     /// \param a (первая скрещиваемая особь)
     /// \param b (вторая скрещиваемая особь)
-    void crossover(const Individual &a, const Individual &b); /// Кроссинговер (см. Genetic.cpp)
+    void crossover(const Individual &a, const Individual &b);
 
     /// Формирование популяции из 128 особей (создание вектора векторов длины 128)
     /// \param a (первый "родитель")
     /// \param b (второй "родитель")
-    void create_population(const Individual &a, const Individual &b); /// Формирование популяции из 128 особей
+    void create_population(const Individual &a, const Individual &b);
 
     /// Вычисление приспособленности каждой особи популяции (применение целевой функции к каждому вектору из вектора векторов)
-    void calc_fitness(); /// Вычисление приспособленности каждой особи популяции
+    void calc_fitness();
 
     /// Селекция: отбор наиболее приспособленных особей (удаление из конца вектора векторов половины векторов)
-    void selection(); /// Селекция
+    void selection();
 
     /// Эволюция: создание новых популяций и проведение селекции до решения задачи (...)
     /// \return Количество популяций (итераций), потребовавшихся для решения задачи
-    int evolution(); /// Эволюция (см. Genetic.cpp)
+    int evolution();
 
     /// Запуск эволюции
     /// \return Эволюция
