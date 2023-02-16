@@ -29,33 +29,6 @@ namespace {
     }
 }
 
-/// Приспособленность особи, то есть целевая функция (может быть любой): f(x,y,z,w) = |(x + 11 * y + 111 * z + 1111 * w) / 100|
-inline int Individual::fitness() {
-    return abs((individual[0] + 11 * individual[1] + 111 * individual[2] + 1111 * individual[3]) / 100);
-}
-
-/// Мутация: случайное изменение генома особи (прибавление случайного числа к случайному элементу вектора)
-void Individual::mutation() {
-    int n = random_number(0, 5);
-    if (n == 0) {
-    } else if (n == 1 || n == 2 || n == 3) {
-        individual[n] += random_number(-100, 100);
-    } else if (n == 4) {
-        std::pair<int, int> randoms = get_random_numbers(1, 3);
-        individual[randoms.first] += random_number(-100, 100);
-        individual[randoms.second] += random_number(-100, 100);
-    } else if (n == 5) {
-        individual[1] += random_number(-100, 100);
-        individual[2] += random_number(-100, 100);
-        individual[3] += random_number(-100, 100);
-    }
-    individual[0] = individual[1] + individual[2] + individual[3];
-}
-
-/// Печать особи (вектора из пяти элементов)
-inline void Individual::print_individual() {
-    std::cout << individual[0] << " " << individual[1] << " " << individual[2] << " " << individual[3] << " " << individual[4] << std::endl;
-}
 
 /// Кроссинговер: скрещивание двух особей (получение 8 векторов из 2 путём перемешивания их элементов)
 void Genetic::crossover(const Individual &a, const Individual &b) {
@@ -74,7 +47,7 @@ void Genetic::crossover(const Individual &a, const Individual &b) {
 }
 
 /// Формирование популяции из 128 особей (создание вектора векторов длины 128)
-void Genetic::create_population(const Individual &a, const Individual &b) {
+void Genetic::createPopulation(const Individual &a, const Individual &b) {
     population.push_back(a);
     population.push_back(b);
     /// Добавляет в популяцию из двух особей оставшихся до 128 путём их скрещивания
@@ -89,14 +62,14 @@ void Genetic::create_population(const Individual &a, const Individual &b) {
 }
 
 /// Вычисление приспособленности каждой особи популяции (применение целевой функции к каждому вектору из вектора векторов)
-void Genetic::calc_fitness() {
+void Genetic::calcFitness() {
     for (int i = 0; i < population.size(); i++)
         population[i][4] = population[i].fitness();
 }
 
 /// Селекция: отбор наиболее приспособленных особей (удаление из конца вектора векторов половины векторов)
 void Genetic::selection() {
-    calc_fitness(); /// Вычисление приспособленности каждой особи
+    calcFitness(); /// Вычисление приспособленности каждой особи
     sort(population.begin(), population.end(), [this] (const Individual &a, const Individual &b){
         return (a < b);});
     population.erase(population.begin() + (population.size() / 2), population.end());
@@ -108,11 +81,23 @@ int Genetic::evolution() {
         std::pair<int, int> randoms = get_random_numbers(0, population.size() - 1);
         Individual x = population[randoms.first];
         Individual y = population[randoms.second];
-        create_population(x, y);
+        createPopulation(x, y);
         selection();
         iterations += 1;
         std::cout << "Iteration " << iterations << ":\n\tBest solution: " << population[0][4] << "\n\tWorst solution: "
              << population[population.size() - 1][4] << "\n\n";
     }
     return iterations;
+}
+
+/// Запуск эволюции
+int Genetic::Start() {
+    return evolution();
+}
+
+/// Конструктор класса Genetic: формирование популяции из двух "родительских" особей, заданных фиксированными шестизначными числами
+Genetic::Genetic(int n1, int n2) {
+    Individual a (n1);
+    Individual b (n2);
+    createPopulation(a, b);
 }

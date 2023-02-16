@@ -10,8 +10,7 @@
 	{
 		"commands" : 
 		[
-			"add_executable",
-			"include_directories"
+			"add_executable"
 		],
 		"files" : 
 		[
@@ -24,12 +23,6 @@
 			},
 			{
 				"command" : 0,
-				"file" : 0,
-				"line" : 8,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
 				"file" : 0,
 				"line" : 6,
 				"parent" : 0
@@ -48,17 +41,6 @@
 					"fragment" : "-std=gnu++17"
 				}
 			],
-			"includes" : 
-			[
-				{
-					"backtrace" : 2,
-					"path" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/Genetic"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/phil.e/Documents/Education/GitHub/Cpp-AU/Genetic_algorithm/Run_Genetic"
-				}
-			],
 			"language" : "CXX",
 			"languageStandard" : 
 			{
@@ -72,7 +54,8 @@
 			[
 				0,
 				1,
-				3
+				3,
+				5
 			]
 		}
 	],
@@ -107,7 +90,8 @@
 			[
 				0,
 				1,
-				3
+				3,
+				5
 			]
 		},
 		{
@@ -115,7 +99,8 @@
 			"sourceIndexes" : 
 			[
 				2,
-				4
+				4,
+				6
 			]
 		}
 	],
@@ -130,23 +115,34 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Genetic/Genetic.cpp",
+			"path" : "Genetic.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Genetic/Genetic.h",
+			"path" : "Genetic.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Run_Genetic/Run_Genetic.cpp",
+			"path" : "Run_Genetic.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Run_Genetic/Run_Genetic.h",
+			"path" : "Run_Genetic.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Individual.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Individual.h",
 			"sourceGroupIndex" : 1
 		}
 	],

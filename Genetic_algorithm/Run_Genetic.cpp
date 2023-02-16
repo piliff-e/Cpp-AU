@@ -16,7 +16,6 @@ void GeneticApplication::input() {
 }
 
 /// Запуск проекта Genetic_algorithm
-/// \return 0 (стандартный вывод)
 int GeneticApplication::run() {
     srand(time(nullptr));
     input();

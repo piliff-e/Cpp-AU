@@ -1,7 +1,6 @@
 # ninja log v5
-2	81	1675975009660721424	CMakeFiles/Genetic_algorithm.dir/main.cpp.o	c6a21b831b02c185
-3	948	1675975010526432595	CMakeFiles/Genetic_algorithm.dir/Run_Genetic/Run_Genetic.cpp.o	8ccaa6b9591b7c2d
-5	1758	1675974447552778678	CMakeFiles/Genetic_algorithm.dir/Genetic/Genetic.cpp.o	a3671da1e6ee1681
-96	244	1675970386143878977	Genetic_algorithm	2e9bb3667d5a04ac
-14	209	1675976051702938767	CMakeFiles/Genetic_algorithm.dir/main.cpp.o	c6a21b831b02c185
-17	1409	1675976052901090261	CMakeFiles/Genetic_algorithm.dir/Run_Genetic/Run_Genetic.cpp.o	8ccaa6b9591b7c2d
+3	79	1676463071198857738	CMakeFiles/Genetic_algorithm.dir/main.cpp.o	c6a21b831b02c185
+4	1271	1676463013492487368	CMakeFiles/Genetic_algorithm.dir/Run_Genetic/Run_Genetic.cpp.o	8ccaa6b9591b7c2d
+9	2623	1676462751572727322	CMakeFiles/Genetic_algorithm.dir/Genetic/Genetic.cpp.o	a3671da1e6ee1681
+79	239	1676463071359963064	Genetic_algorithm	2e9bb3667d5a04ac
+1	2543	1676526063503949568	CMakeFiles/Genetic_algorithm.dir/Genetic.cpp.o	d9e141d4f1dd9c98
