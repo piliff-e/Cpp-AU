@@ -52,7 +52,7 @@ void Genetic::createPopulation(const Individual &a, const Individual &b) {
     population.push_back(b);
     /// Добавляет в популяцию из двух особей оставшихся до 128 путём их скрещивания
     while (population.size() <= 122) {
-        std::pair<int, int> randoms = getRandomNumbers(0, population.size() - 1);
+        std::pair<int, int> randoms = getRandomNumbers(0, static_cast<int>(population.size()) - 1);
         Individual x = population[randoms.first];
         Individual y = population[randoms.second];
         crossover(x, y);
@@ -63,8 +63,8 @@ void Genetic::createPopulation(const Individual &a, const Individual &b) {
 
 /// Вычисление приспособленности каждой особи популяции (применение целевой функции к каждому вектору из вектора векторов)
 void Genetic::calcFitness() {
-    for (int i = 0; i < population.size(); i++)
-        population[i][4] = population[i].fitness();
+    for (auto & i : population)
+        i[4] = i.fitness();
 }
 
 /// Селекция: отбор наиболее приспособленных особей (удаление из конца вектора векторов половины векторов)
