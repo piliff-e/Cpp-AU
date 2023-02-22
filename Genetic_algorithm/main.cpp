@@ -1,6 +1,6 @@
 #include "Run_Genetic.h"
 
 int main() {
-    GeneticApplication app;
-    return app.run();
+    GeneticApplication application;
+    return application.run();
 }
