@@ -10,7 +10,7 @@ namespace {
     /// \param from (начало диапазона)
     /// \param to (конец диапазона)
     /// \return Случайное число из диапазона от from до to
-    inline int random_number(int from, int to) {
+    inline int randomNumber(int from, int to) {
         return from + std::rand() % (to - from + 1);
     }
 
@@ -18,12 +18,12 @@ namespace {
     /// \param from (начало диапазона)
     /// \param to (конец диапазона)
     /// \return Два случайных числа из диапазона от from до to
-    inline std::pair<int, int> get_random_numbers(int from, int to) {
-        int i = random_number(from, to);
-        int j = random_number(from, to);
+    inline std::pair<int, int> getRandomNumbers(int from, int to) {
+        int i = randomNumber(from, to);
+        int j = randomNumber(from, to);
         /// Добивается различия i и j, если изначально они были равны
         while (i == j) {
-            j = random_number(from, to);
+            j = randomNumber(from, to);
         }
         return {i, j};
     }
@@ -52,7 +52,7 @@ void Genetic::createPopulation(const Individual &a, const Individual &b) {
     population.push_back(b);
     /// Добавляет в популяцию из двух особей оставшихся до 128 путём их скрещивания
     while (population.size() <= 122) {
-        std::pair<int, int> randoms = get_random_numbers(0, population.size() - 1);
+        std::pair<int, int> randoms = getRandomNumbers(0, population.size() - 1);
         Individual x = population[randoms.first];
         Individual y = population[randoms.second];
         crossover(x, y);
@@ -78,7 +78,7 @@ void Genetic::selection() {
 /// Эволюция: создание новых популяций и проведение селекции до решения задачи (...)
 int Genetic::evolution() {
     while (population[0][4] != 0) {
-        std::pair<int, int> randoms = get_random_numbers(0, population.size() - 1);
+        std::pair<int, int> randoms = getRandomNumbers(0, population.size() - 1);
         Individual x = population[randoms.first];
         Individual y = population[randoms.second];
         createPopulation(x, y);
