@@ -19,7 +19,7 @@ void GeneticApplication::input() {
 int GeneticApplication::run() {
     srand(time(nullptr));
     input();
-    Genetic evol(n1, n2);
-    std::cout << evol.Start() << " iterations" << std::endl;
+    Genetic evolution(n1, n2);
+    std::cout << evolution.startEvolution() << " iterations" << std::endl;
     return 0;
 }

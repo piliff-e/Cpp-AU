@@ -15,21 +15,21 @@ public:
     /// Перегрузка оператора [] для класса Individual (для нахождения элемента особи по его индексу в произвольном случае)
     /// \param i (индекс искомого элемента)
     /// \return Элемент особи с индексом i
-    int& operator [] (int i) {
+    int &operator[](int i) {
         return individual[i];
     }
 
     /// Перегрузка оператора [] для класса Individual (для нахождения элемента особи по его индексу в константном случае)
     /// \param i (индекс искомого элемента)
     /// \return Элемент особи с индексом i
-    const int& operator [] (int i) const {
+    const int &operator[](int i) const {
         return individual[i];
     }
 
     /// Перегрузка оператора < для класса Individual (для сравнения особей)
     /// \param ind_2 (вторая сравниваемая особь)
     /// \return true, если меньше, иначе false
-    bool operator < (const Individual& ind_2) const {
+    bool operator<(const Individual &ind_2) const {
         return (individual[4] < ind_2.individual[4]);
     }
 

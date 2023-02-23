@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(Genetic_algorithm
         main.cpp
+        Randoms.cpp Randoms.h
+        Individual.cpp Individual.h
         Genetic.cpp Genetic.h
-        Run_Genetic.cpp Run_Genetic.h
-        Individual.cpp Individual.h)
+        Run_Genetic.cpp Run_Genetic.h)
