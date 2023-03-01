@@ -14,6 +14,13 @@ private:
     /// Конец диапазона, из которого выбирается случайное число
     int to;
 
+    /// Вспомогательный класс для вызова srand перед функцией main
+    class Randomizer {
+    public:
+        Randomizer() { srand(time(nullptr)); }
+        static Randomizer r;
+    };
+
 public:
     /// Выбор случайного числа из заданного диапазона
     /// \param from (начало диапазона)

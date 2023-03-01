@@ -1,10 +1,16 @@
 # ninja log v5
 3850	4087	1677161864471233732	Genetic_algorithm	6e59ff65de12a9fd
-0	188	1677162454304375293	CMakeFiles/GeneticAlgorithm.dir/main.cpp.o	d7055dee7c1bfe6e
 1	1743	1677162455858726541	CMakeFiles/GeneticAlgorithm.dir/Randoms.cpp.o	da4725f003294300
 2	2006	1677162456121688997	CMakeFiles/GeneticAlgorithm.dir/Individual.cpp.o	44afd6d04c623f
-188	2230	1677162456343234714	CMakeFiles/GeneticAlgorithm.dir/Genetic.cpp.o	3cd25c99e8418ea7
-1747	2772	1677162456894006821	CMakeFiles/GeneticAlgorithm.dir/GeneticApplication.cpp.o	5d1b58fe154d2fa0
-2772	2858	1677162456980361846	GeneticAlgorithm	c626017bb5989981
 4	1417	1677162737323135480	CMakeFiles/GeneticAlgorithm.dir/Genetic.cpp.o	3cd25c99e8418ea7
+0	188	1677162454304375293	CMakeFiles/GeneticAlgorithm.dir/main.cpp.o	d7055dee7c1bfe6e
 1417	1553	1677162737463050674	GeneticAlgorithm	c626017bb5989981
+1747	2772	1677162456894006821	CMakeFiles/GeneticAlgorithm.dir/GeneticApplication.cpp.o	5d1b58fe154d2fa0
+4	1690	1677673082878013080	CMakeFiles/GeneticAlgorithm.dir/Randoms.cpp.o	da4725f003294300
+2	911	1677673106296347763	CMakeFiles/GeneticAlgorithm.dir/GeneticApplication.cpp.o	5d1b58fe154d2fa0
+911	1190	1677673106572954937	GeneticAlgorithm	c626017bb5989981
+3	1373	1677673903700801384	CMakeFiles/GeneticAlgorithm.dir/Randoms.cpp.o	da4725f003294300
+3	1514	1677673903845742987	CMakeFiles/GeneticAlgorithm.dir/Individual.cpp.o	44afd6d04c623f
+3	1627	1677673903958390920	CMakeFiles/GeneticAlgorithm.dir/Genetic.cpp.o	3cd25c99e8418ea7
+1374	2183	1677673904516235040	CMakeFiles/GeneticAlgorithm.dir/GeneticApplication.cpp.o	5d1b58fe154d2fa0
+2183	2313	1677673904647332820	GeneticAlgorithm	c626017bb5989981

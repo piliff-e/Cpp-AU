@@ -4,6 +4,8 @@
 
 #include "Randoms.h"
 
+Randoms::Randomizer Randoms::Randomizer::r;
+
 /// Выбор случайного числа из заданного диапазона
 int Randoms::randomNumber() {
     return from + std::rand() % (to - from + 1);

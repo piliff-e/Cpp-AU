@@ -17,9 +17,12 @@ void GeneticApplication::input() {
 
 /// Запуск проекта Genetic_algorithm
 int GeneticApplication::run() {
-    srand(time(nullptr));
+
     input();
+
     Genetic evolution(n1, n2);
-    std::cout << evolution.startEvolution() << " iterations" << std::endl;
+    const auto iterationsNumber = evolution.startEvolution();
+    std::cout << iterationsNumber << " iterations" << std::endl;
+
     return 0;
 }
