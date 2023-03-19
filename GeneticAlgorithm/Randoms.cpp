@@ -6,6 +6,12 @@
 
 Randoms::Randomizer Randoms::Randomizer::r;
 
+/// Конструктор класса Randoms
+Randoms::Randoms(int n1, int n2) {
+    from = n1;
+    to = n2;
+}
+
 /// Выбор случайного числа из заданного диапазона
 int Randoms::randomNumber() {
     return from + std::rand() % (to - from + 1);
@@ -21,10 +27,4 @@ std::pair<int, int> Randoms::twoRandomNumbers() {
         j = range.randomNumber();
     }
     return {i, j};
-}
-
-/// Конструктор класса Randoms
-Randoms::Randoms(int n1, int n2) {
-    from = n1;
-    to = n2;
 }
