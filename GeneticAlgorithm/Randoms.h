@@ -7,21 +7,12 @@
 #include <iostream>
 
 class Randoms {
-private:
-    /// Начало диапазона, из которого выбирается случайное число
-    int from;
-
-    /// Конец диапазона, из которого выбирается случайное число
-    int to;
-
-    /// Вспомогательный класс для вызова srand перед функцией main
-    class Randomizer {
-    public:
-        Randomizer() { srand(time(nullptr)); }
-        static Randomizer r;
-    };
-
 public:
+    /// Конструктор класса Randoms
+    /// \param from (начало диапазона)
+    /// \param to (конец диапазона)
+    Randoms(int n1, int n2);
+
     /// Выбор случайного числа из заданного диапазона
     /// \param from (начало диапазона)
     /// \param to (конец диапазона)
@@ -34,8 +25,18 @@ public:
     /// \return Два случайных числа из диапазона от from до to
     std::pair<int, int> twoRandomNumbers();
 
-    /// Конструктор класса Randoms
-    /// \param from (начало диапазона)
-    /// \param to (конец диапазона)
-    Randoms(int n1, int n2);
+private:
+    /// Начало диапазона, из которого выбирается случайное число
+    int from;
+
+    /// Конец диапазона, из которого выбирается случайное число
+    int to;
+
+    /// Вспомогательный класс для вызова srand перед функцией main
+    class Randomizer {
+    public:
+        Randomizer() { srand(time(nullptr)); }
+
+        static Randomizer r;
+    };
 };

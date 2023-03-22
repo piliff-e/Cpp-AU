@@ -6,6 +6,18 @@
 #include "Genetic.h"
 #include "Randoms.h"
 
+namespace {
+constexpr std::size_t defaultPopulationSize = 122;
+constexpr std::size_t stopEvolutionRating = 0;
+}
+
+/// Конструктор класса Genetic: формирование популяции из двух "родительских" особей, заданных фиксированными шестизначными числами
+Genetic::Genetic(int n1, int n2) {
+    Individual a(n1);
+    Individual b(n2);
+    createPopulation(a, b);
+}
+
 /// Кроссинговер: скрещивание двух особей (получение 8 векторов из 2 путём перемешивания их элементов)
 void Genetic::crossover(const Individual &a, const Individual &b) {
     Individual c1 = {(a[1] + a[2] + b[3]), a[1], a[2], b[3], 1};
@@ -27,7 +39,7 @@ void Genetic::createPopulation(const Individual &a, const Individual &b) {
     population.push_back(a);
     population.push_back(b);
     /// Добавляет в популяцию из двух особей оставшихся до 128 путём их скрещивания
-    while (population.size() <= 122) {
+    while (population.size() <= defaultPopulationSize) {
         Randoms indexes = {0, static_cast<int>(population.size()) - 1};
         std::pair<int, int> randomIndexes = indexes.twoRandomNumbers();
         Individual x = population[randomIndexes.first];
@@ -55,7 +67,7 @@ void Genetic::selection() {
 
 /// Эволюция: создание новых популяций и проведение селекции до решения задачи (...)
 int Genetic::startEvolution() {
-    while (population[0][4] != 0) {
+    while (population[0][4] != stopEvolutionRating) {
         Randoms indexes = {0, static_cast<int>(population.size()) - 1};
         std::pair<int, int> randomIndexes = indexes.twoRandomNumbers();
         Individual x = population[randomIndexes.first];
@@ -67,11 +79,4 @@ int Genetic::startEvolution() {
                   << population[population.size() - 1][4] << "\n\n";
     }
     return iterations;
-}
-
-/// Конструктор класса Genetic: формирование популяции из двух "родительских" особей, заданных фиксированными шестизначными числами
-Genetic::Genetic(int n1, int n2) {
-    Individual a(n1);
-    Individual b(n2);
-    createPopulation(a, b);
 }
