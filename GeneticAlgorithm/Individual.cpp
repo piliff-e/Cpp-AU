@@ -19,11 +19,11 @@ namespace {
     constexpr std::int32_t minDecrease = -100;
     constexpr std::size_t maxIncrease = 100;
 
-    constexpr std::size_t firstMultiplier = 1;
-    constexpr std::size_t secondMultiplier = 11;
-    constexpr std::size_t thirdMultiplier = 111;
-    constexpr std::size_t fourthMultiplier = 1111;
-    constexpr std::size_t divider = 100;
+    constexpr std::int32_t firstMultiplier = 1;
+    constexpr std::int32_t secondMultiplier = 11;
+    constexpr std::int32_t thirdMultiplier = 111;
+    constexpr std::int32_t fourthMultiplier = 1111;
+    constexpr std::int32_t divider = 100;
 }
 
 /// Создание особи (формирование вектора из пяти элементов из данного шестизначного числа)
@@ -39,7 +39,7 @@ Individual::Individual(int n) : individual(defaultIndividualSize) {
 }
 
 /// Создание особи (формирование вектора из пяти элементов из пяти данных числел)
-Individual::Individual(int n0, int n1, int n2, int n3, int n4) {
+Individual::Individual(int n0, int n1, int n2, int n3, int n4) : individual(defaultIndividualSize) {
     individual[0] = n0;
     individual[1] = n1;
     individual[2] = n2;

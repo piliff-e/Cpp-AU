@@ -7,8 +7,8 @@
 #include "Randoms.h"
 
 namespace {
-    constexpr std::size_t defaultPopulationSize = 122;
-    constexpr std::size_t stopEvolutionRating = 0;
+constexpr std::size_t defaultPopulationSize = 122;
+constexpr std::size_t stopEvolutionRating = 0;
 }
 
 /// Конструктор класса Genetic: формирование популяции из двух "родительских" особей, заданных фиксированными шестизначными числами
