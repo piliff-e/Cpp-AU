@@ -7,7 +7,7 @@
 #include <iostream>
 
 class Randoms {
-public:
+ public:
     /// Конструктор класса Randoms
     /// \param from (начало диапазона)
     /// \param to (конец диапазона)
@@ -25,7 +25,7 @@ public:
     /// \return Два случайных числа из диапазона от from до to
     std::pair<int, int> twoRandomNumbers();
 
-private:
+ private:
     /// Начало диапазона, из которого выбирается случайное число
     int from;
 
@@ -34,7 +34,7 @@ private:
 
     /// Вспомогательный класс для вызова srand перед функцией main
     class Randomizer {
-    public:
+     public:
         Randomizer() { srand(time(nullptr)); }
 
         static Randomizer r;
