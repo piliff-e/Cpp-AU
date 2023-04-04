@@ -6,8 +6,9 @@
 
 #include <vector>
 
+/// Класс особи, то есть того, из чего состоит и с чем работает класс популяции
 class Individual {
-public:
+ public:
     /// Создание особи (формирование вектора из пяти элементов из данного шестизначного числа)
     /// \param n (фиксированное шестизначное число)
     explicit Individual(int n);
@@ -51,7 +52,7 @@ public:
         return (individual[4] < ind_2.individual[4]);
     }
 
-private:
+ private:
     /// Особь
     std::vector<int> individual;
 };

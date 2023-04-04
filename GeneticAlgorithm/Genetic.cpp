@@ -47,12 +47,12 @@ void Genetic::createPopulation(const Individual &a, const Individual &b) {
         crossover(x, y);
     }
     /// Применяет случайную мутацию к каждой особи получившейся популяции
-    for (auto &i: population) i.mutation();
+    for (auto &i : population) i.mutation();
 }
 
 /// Вычисление приспособленности каждой особи популяции (применение целевой функции к каждому вектору из вектора векторов)
 void Genetic::calcFitness() {
-    for (auto &i: population)
+    for (auto &i : population)
         i[4] = i.fitness();
 }
 

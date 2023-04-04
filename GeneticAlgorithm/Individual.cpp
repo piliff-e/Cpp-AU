@@ -6,24 +6,24 @@
 #include "Randoms.h"
 
 namespace {
-    constexpr std::size_t defaultIndividualSize = 5;
-    constexpr std::size_t defaultRating = 1;
+constexpr std::size_t defaultIndividualSize = 5;
+constexpr std::size_t defaultRating = 1;
 
-    constexpr std::size_t nothingToDoScenario = 0;
-    constexpr std::size_t addToFirstScenario = 1;
-    constexpr std::size_t addToSecondScenario = 2;
-    constexpr std::size_t addToThirdScenario = 3;
-    constexpr std::size_t addToTwoScenario = 4;
-    constexpr std::size_t addToThreeScenario = 5;
+constexpr std::size_t nothingToDoScenario = 0;
+constexpr std::size_t addToFirstScenario = 1;
+constexpr std::size_t addToSecondScenario = 2;
+constexpr std::size_t addToThirdScenario = 3;
+constexpr std::size_t addToTwoScenario = 4;
+constexpr std::size_t addToThreeScenario = 5;
 
-    constexpr std::int32_t minDecrease = -100;
-    constexpr std::size_t maxIncrease = 100;
+constexpr std::int32_t minDecrease = -100;
+constexpr std::size_t maxIncrease = 100;
 
-    constexpr std::int32_t firstMultiplier = 1;
-    constexpr std::int32_t secondMultiplier = 11;
-    constexpr std::int32_t thirdMultiplier = 111;
-    constexpr std::int32_t fourthMultiplier = 1111;
-    constexpr std::int32_t divider = 100;
+constexpr std::int32_t firstMultiplier = 1;
+constexpr std::int32_t secondMultiplier = 11;
+constexpr std::int32_t thirdMultiplier = 111;
+constexpr std::int32_t fourthMultiplier = 1111;
+constexpr std::int32_t divider = 100;
 }
 
 /// Создание особи (формирование вектора из пяти элементов из данного шестизначного числа)
@@ -50,7 +50,7 @@ Individual::Individual(int n0, int n1, int n2, int n3, int n4) : individual(defa
 /// Приспособленность особи, то есть целевая функция (может быть любой): f(x,y,z,w) = |(x + 11 * y + 111 * z + 1111 * w) / 100|
 int Individual::fitness() {
     return abs((firstMultiplier * individual[0] + secondMultiplier * individual[1] + thirdMultiplier * individual[2] +
-                fourthMultiplier * individual[3]) / divider);
+        fourthMultiplier * individual[3]) / divider);
 }
 
 /// Мутация: случайное изменение генома особи (прибавление случайного числа к случайному элементу вектора)
