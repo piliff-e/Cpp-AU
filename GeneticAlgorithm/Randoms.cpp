@@ -4,6 +4,7 @@
 
 #include "Randoms.h"
 
+/// Вспомошательная константа
 Randoms::Randomizer Randoms::Randomizer::r;
 
 /// Конструктор класса Randoms

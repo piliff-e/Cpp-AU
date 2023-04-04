@@ -6,6 +6,7 @@
 
 #include <iostream>
 
+/// Класс для получиения случайных чисел из заданного диапазона
 class Randoms {
  public:
     /// Конструктор класса Randoms
@@ -35,8 +36,10 @@ class Randoms {
     /// Вспомогательный класс для вызова srand перед функцией main
     class Randomizer {
      public:
+        /// Запуск srand
         Randomizer() { srand(time(nullptr)); }
 
+        /// Вспомошательная константа
         static Randomizer r;
     };
 };
