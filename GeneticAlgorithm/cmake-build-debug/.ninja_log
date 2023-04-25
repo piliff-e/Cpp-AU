@@ -1,15 +1,14 @@
 # ninja log v5
-2508	3367	1680086344730989557	CMakeFiles/GeneticAlgorithm.dir/GeneticApplication.cpp.o	d84cb3aa4f4e1125
-1010	2771	1680086344133906862	CMakeFiles/GeneticAlgorithm.dir/Genetic.cpp.o	6f968185bd5e97c3
-1	238	1680637977497085525	build.ninja	1bb8c84dbed00ca8
-3	1010	1680086342366743821	CMakeFiles/GeneticAlgorithm.dir/main.cpp.o	95ee393bc07529b2
-3367	3631	1680086344993940023	GeneticAlgorithm	883a58b63e5f6e29
-8	2657	1680086344013646986	CMakeFiles/GeneticAlgorithm.dir/Individual.cpp.o	56881da10d5729c
-6	2508	1680086343865977239	CMakeFiles/GeneticAlgorithm.dir/Randoms.cpp.o	b1718b81ff1ac3fa
+109	1477	1680695559159787565	CMakeFiles/GeneticAlgorithm.dir/Randoms.cpp.o	6e10410a47b31a9
 3850	4087	1677161864471233732	Genetic_algorithm	6e59ff65de12a9fd
-4	934	1680638649390263658	CMakeFiles/GeneticAlgorithm.dir/main.cpp.o	95ee393bc07529b2
-7	2932	1680638651383484160	CMakeFiles/GeneticAlgorithm.dir/Randoms.cpp.o	b1718b81ff1ac3fa
-9	3215	1680638651669146080	CMakeFiles/GeneticAlgorithm.dir/Individual.cpp.o	56881da10d5729c
-934	3518	1680638651962236552	CMakeFiles/GeneticAlgorithm.dir/Genetic.cpp.o	6f968185bd5e97c3
-2933	4359	1680638652821489773	CMakeFiles/GeneticAlgorithm.dir/GeneticApplication.cpp.o	d84cb3aa4f4e1125
-4360	4633	1680638653096060423	GeneticAlgorithm	883a58b63e5f6e29
+2	109	1680695557789200795	GeneticAlgorithm_autogen/timestamp	a54b0609c801db74
+2	109	1680695557789200795	GeneticAlgorithm_autogen/mocs_compilation.cpp	a54b0609c801db74
+1477	2549	1680695560238075311	CMakeFiles/GeneticAlgorithm.dir/Individual.cpp.o	3a2894aee5dd6db8
+110	215	1680695557904503739	CMakeFiles/GeneticAlgorithm.dir/main.cpp.o	aca69b1eaf6d24b1
+2549	2969	1680695560653018820	GeneticAlgorithm	2290b15b9780896f
+111	189	1680695557878910592	CMakeFiles/GeneticAlgorithm.dir/GeneticAlgorithm_autogen/mocs_compilation.cpp.o	c04ce68d7efe2e76
+13	5519	1682454265521338848	build.ninja	1bb8c84dbed00ca8
+189	1668	1680695559353037155	CMakeFiles/GeneticAlgorithm.dir/GeneticApplication.cpp.o	f0b226a0ef0de518
+215	1938	1680695559621117206	CMakeFiles/GeneticAlgorithm.dir/Genetic.cpp.o	bc13334597d6419c
+2	109	1680695557789200795	/Users/phil.e/Documents/Education/GitHub/Cpp-AU/GeneticAlgorithm/cmake-build-debug/GeneticAlgorithm_autogen/mocs_compilation.cpp	a54b0609c801db74
+2	109	1680695557789200795	/Users/phil.e/Documents/Education/GitHub/Cpp-AU/GeneticAlgorithm/cmake-build-debug/GeneticAlgorithm_autogen/timestamp	a54b0609c801db74
